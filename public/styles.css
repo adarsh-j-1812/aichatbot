@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 90vh;
+    background-color: #c1c1c1;
+    border-radius: 5px;
+}
+
+.todocon{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 48vw;
+    height: 88vh;
+    background-color: #ffffff;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden scroll;
+    border-radius: 10px;
+    scrollbar-width: thin;
+    scroll-snap-type: y mandatory;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.todo{
+    padding: 5px 5px 21px 13px;
+    margin-bottom: 20px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    overflow-x: auto;
+    height: auto;
+    flex-shrink: 0;
+    width: 96%;
+    scrollbar-width: thin;
+    scroll-snap-align: start;
+}
+
+
+#todotext{
+    width: 47vw;
+    margin: 0 0.3vw 0 0;
+    height: 3vh;
+    border-radius: 5px;
+    border: 1px solid white;
+    outline: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.send{
+    width: 52vw;
+    margin-top: 10px;
+    height: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#send{
+    width: 30px;
+    height: 3.27vh;
+    border-radius: 5px;
+    border: 1px solid white;
+    outline: none;
+}
+
+.you{
+    text-decoration: underline;
+}
+
+.AI{
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.sended,.answer{
+    margin-left: 10px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .container{
+        width: 90vw;
+    }
+    .todocon{
+        width: 87vw;
+    }
+    .send{
+        width: 90vw;
+    }
+    #todotext{
+        width: 86vw;
+    }
+}
+
+.gemini{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* background-color: red; */
+    background-image: url('gemini.png');
+    background-size: 100% 100%;
+    opacity: 0;
+    transition: all 1s ease-out;
+}

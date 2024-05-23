@@ -5,7 +5,8 @@
   "main": "ai.js",
   "scripts": {
     "test": "node ai.js",
-    "build": "node ai.js"
+    "build": "echo 'Build step complete'", // or your actual build command
+    "start": "node ai.js"
   },
   "author": "",
   "license": "ISC",
